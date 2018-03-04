@@ -5,7 +5,6 @@ const pify        = require('pify');
 const pTimeout    = require('p-timeout');
 const rp          = require('request-promise');
 const cheerio     = require('cheerio');
-const humanizeUrl = require('humanize-url');
 
 function ghostDetect (target) {
   return rp(target)
