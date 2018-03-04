@@ -30,7 +30,7 @@ ghostDetect('google.com').then(ghost => {
 
 ### ghostDetect(targets, [options])
 
-Returns a `Promise` for a `boolean` which is `true` if any of the `targets` are reachable.
+Returns a `Promise` for a `boolean` which is `true` if any of the `targets` are using the Ghost publishing platform.
 
 #### targets
 
