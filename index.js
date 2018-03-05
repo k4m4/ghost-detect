@@ -1,13 +1,14 @@
 'use strict'
-const arrify      = require('arrify');
-const pAny        = require('p-any');
-const pify        = require('pify');
-const pTimeout    = require('p-timeout');
-const rp          = require('request-promise');
-const cheerio     = require('cheerio');
+const arrify       = require('arrify');
+const pAny         = require('p-any');
+const pify         = require('pify');
+const pTimeout     = require('p-timeout');
+const rp           = require('request-promise');
+const cheerio      = require('cheerio');
+const normalizeUrl = require('normalize-url');
 
 function ghostDetect (target) {
-  return rp(target)
+  return rp(normalizeUrl(target))
     .then(function (htmlString) {
       const $ = cheerio.load(htmlString);
       var ghost = $('meta[name="generator"]').attr('content');
