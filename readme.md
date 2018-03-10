@@ -47,6 +47,11 @@ Type: `number`
 Timeout in milliseconds after which a request is considered failed. Default: `5000`.
 
 
+## Related
+
+- [ghost-detect.now](https://github.com/k4m4/ghost-detect.now) - A minimal service to check whether a site has been generator by the Ghost publishing platform.
+
+
 ## License
 
 MIT © [Nikolaos Kamarinakis](https://nikolaskama.me/)
