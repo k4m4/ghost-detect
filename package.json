@@ -24,7 +24,7 @@
     "index.js"
   ],
   "devDependencies": {
-    "ava": "*"
+    "ava": "^1.2.1"
   },
   "dependencies": {
     "arrify": "^1.0.1",
@@ -33,7 +33,7 @@
     "p-any": "^1.1.0",
     "p-timeout": "^2.0.1",
     "pify": "^3.0.0",
-    "request": "^2.83.0",
+    "request": "^2.88.0",
     "request-promise": "^4.2.2"
   }
 }
